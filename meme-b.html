@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GTA 6 launch night queue — make.fun meme (version B)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 1280px; height: 1024px; background: #0a0a10; }
+  svg { display: block; }
+  .cap  { font-family: 'Liberation Sans', 'Arial Black', Arial, sans-serif; font-weight: 900; }
+  .bold { font-family: 'Liberation Sans', Arial, sans-serif; font-weight: 800; }
+</style>
+</head>
+<body>
+<svg width="1280" height="1024" viewBox="0 0 1280 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#160538"/>
+      <stop offset="0.3" stop-color="#4a0e5e"/>
+      <stop offset="0.55" stop-color="#a8235c"/>
+      <stop offset="0.78" stop-color="#ee5a2e"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe259"/>
+      <stop offset="1" stop-color="#ff7518"/>
+    </linearGradient>
+    <linearGradient id="street" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1650"/>
+      <stop offset="1" stop-color="#150826"/>
+    </linearGradient>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ff2e88" flood-opacity="0.65"/>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1280" height="720" fill="url(#sky)"/>
+
+  <!-- clouds: dark purple banks up top, warm lit banks near the sun -->
+  <g opacity="0.5" fill="#2a0a4e">
+    <ellipse cx="180" cy="70" rx="190" ry="34"/>
+    <ellipse cx="330" cy="52" rx="130" ry="26"/>
+    <ellipse cx="700" cy="60" rx="210" ry="30"/>
+    <ellipse cx="1010" cy="84" rx="180" ry="28"/>
+  </g>
+  <g opacity="0.38" fill="#8f2a72">
+    <ellipse cx="120" cy="180" rx="150" ry="24"/>
+    <ellipse cx="520" cy="150" rx="180" ry="26"/>
+    <ellipse cx="900" cy="170" rx="150" ry="22"/>
+    <ellipse cx="1180" cy="230" rx="130" ry="20"/>
+  </g>
+  <g opacity="0.45" fill="#ff8a5c">
+    <ellipse cx="1010" cy="330" rx="200" ry="24"/>
+    <ellipse cx="830" cy="290" rx="130" ry="18"/>
+    <ellipse cx="180" cy="330" rx="150" ry="18"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="150" cy="80" r="2.5"/><circle cx="320" cy="150" r="2"/><circle cx="520" cy="70" r="2.5"/>
+    <circle cx="700" cy="120" r="2"/><circle cx="880" cy="60" r="2.5"/><circle cx="1080" cy="140" r="2"/>
+    <circle cx="1180" cy="80" r="2"/><circle cx="240" cy="230" r="2"/><circle cx="980" cy="210" r="2"/>
+    <circle cx="60" cy="180" r="2"/><circle cx="760" cy="180" r="1.8"/><circle cx="430" cy="190" r="1.8"/>
+    <circle cx="1150" cy="250" r="1.8"/><circle cx="180" cy="320" r="1.6"/><circle cx="1050" cy="300" r="1.6"/>
+    <circle cx="90" cy="120" r="1.6"/><circle cx="610" cy="95" r="1.6"/><circle cx="390" cy="105" r="1.5"/>
+    <circle cx="1240" cy="180" r="1.6"/><circle cx="560" cy="215" r="1.5"/><circle cx="40" cy="260" r="1.5"/>
+  </g>
+  <path d="M210,108 L212.6,117.4 L222,120 L212.6,122.6 L210,132 L207.4,122.6 L198,120 L207.4,117.4 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M1090,80 L1092.2,87.8 L1100,90 L1092.2,92.2 L1090,100 L1087.8,92.2 L1080,90 L1087.8,87.8 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M648,238 L650,245 L657,247 L650,249 L648,256 L646,249 L639,247 L646,245 Z" fill="#ffffff" opacity="0.8"/>
+
+  <!-- retro sun, low on the horizon, with an outer glow -->
+  <circle cx="1055" cy="615" r="205" fill="#ff7b39" opacity="0.22"/>
+  <circle cx="1055" cy="615" r="165" fill="url(#sun)"/>
+  <g fill="#b01e56" opacity="0.8">
+    <rect x="890" y="630" width="330" height="7"/>
+    <rect x="890" y="652" width="330" height="10"/>
+    <rect x="890" y="678" width="330" height="13"/>
+    <rect x="890" y="708" width="330" height="17"/>
+    <rect x="890" y="742" width="330" height="21"/>
+  </g>
+
+  <!-- far skyline layer (haze) -->
+  <g fill="#4a1e78" opacity="0.5">
+    <rect x="20" y="430" width="80" height="270"/><rect x="130" y="390" width="66" height="310"/>
+    <rect x="230" y="450" width="95" height="250"/><rect x="360" y="405" width="70" height="295"/>
+    <rect x="470" y="440" width="90" height="260"/><rect x="600" y="395" width="64" height="305"/>
+    <rect x="700" y="455" width="88" height="245"/><rect x="820" y="415" width="72" height="285"/>
+    <rect x="930" y="445" width="92" height="255"/><rect x="1060" y="400" width="68" height="300"/>
+    <rect x="1160" y="450" width="100" height="250"/>
+  </g>
+
+  <!-- near Leonida skyline silhouette -->
+  <g fill="#20093d">
+    <rect x="0" y="520" width="90" height="180"/><rect x="85" y="470" width="70" height="230"/>
+    <rect x="150" y="545" width="110" height="155"/><rect x="255" y="495" width="80" height="205"/>
+    <rect x="330" y="555" width="95" height="145"/><rect x="420" y="480" width="75" height="220"/>
+    <rect x="490" y="540" width="105" height="160"/><rect x="590" y="500" width="85" height="200"/>
+    <rect x="670" y="550" width="100" height="150"/><rect x="765" y="485" width="70" height="215"/>
+    <rect x="830" y="535" width="95" height="165"/><rect x="920" y="475" width="80" height="225"/>
+    <rect x="995" y="545" width="110" height="155"/><rect x="1100" y="505" width="75" height="195"/>
+    <rect x="1170" y="555" width="110" height="145"/>
+    <rect x="118" y="436" width="4" height="34"/>
+    <!-- stepped art-deco tower with a spire -->
+    <rect x="688" y="470" width="56" height="230"/><rect x="698" y="446" width="36" height="24"/>
+    <rect x="708" y="424" width="16" height="22"/><rect x="714" y="402" width="4" height="22"/>
+    <!-- water tower -->
+    <path d="M352,556 L358,508 L396,508 L402,556 L394,556 L390,528 L364,528 L360,556 Z"/>
+    <rect x="354" y="498" width="46" height="12" rx="4"/>
+  </g>
+  <circle cx="120" cy="432" r="4" fill="#ff2e88"/>
+  <circle cx="716" cy="400" r="3.5" fill="#ff4040"/>
+  <!-- lit windows -->
+  <g fill="#ffd23f" opacity="0.75">
+    <rect x="100" y="500" width="8" height="11"/><rect x="128" y="540" width="8" height="11"/>
+    <rect x="275" y="530" width="8" height="11"/><rect x="440" y="520" width="8" height="11"/>
+    <rect x="612" y="545" width="8" height="11"/><rect x="782" y="520" width="8" height="11"/>
+    <rect x="940" y="510" width="8" height="11"/><rect x="1120" y="545" width="8" height="11"/>
+    <rect x="30" y="560" width="8" height="11"/><rect x="700" y="585" width="8" height="11"/>
+    <rect x="860" y="570" width="8" height="11"/><rect x="1020" y="580" width="8" height="11"/>
+    <rect x="168" y="575" width="8" height="11"/><rect x="300" y="580" width="8" height="11"/>
+    <rect x="505" y="575" width="8" height="11"/><rect x="640" y="530" width="8" height="11"/>
+    <rect x="800" y="560" width="8" height="11"/><rect x="1075" y="600" width="8" height="11"/>
+    <rect x="1200" y="590" width="8" height="11"/><rect x="52" y="610" width="8" height="11"/>
+    <rect x="700" y="500" width="7" height="10"/><rect x="722" y="500" width="7" height="10"/>
+    <rect x="700" y="522" width="7" height="10"/><rect x="722" y="522" width="7" height="10"/>
+    <rect x="700" y="544" width="7" height="10"/><rect x="711" y="566" width="7" height="10"/>
+  </g>
+  <g fill="#7fe7ff" opacity="0.65">
+    <rect x="455" y="560" width="8" height="11"/><rect x="905" y="540" width="8" height="11"/>
+    <rect x="205" y="600" width="8" height="11"/><rect x="1150" y="530" width="8" height="11"/>
+  </g>
+
+  <!-- palm trees: two big, two mid, one small -->
+  <g stroke="#150826" fill="none" stroke-linecap="round">
+    <path d="M98,690 Q84,480 72,296" stroke-width="17"/>
+    <path d="M72,296 Q30,252 2,292" stroke-width="11"/>
+    <path d="M72,296 Q60,238 18,214" stroke-width="11"/>
+    <path d="M72,296 Q96,232 140,208" stroke-width="11"/>
+    <path d="M72,296 Q128,252 168,262" stroke-width="11"/>
+    <path d="M72,296 Q120,286 172,318" stroke-width="11"/>
+    <path d="M72,296 Q40,282 -6,318" stroke-width="11"/>
+    <path d="M1182,690 Q1196,500 1208,316" stroke-width="17"/>
+    <path d="M1208,316 Q1250,272 1278,292" stroke-width="11"/>
+    <path d="M1208,316 Q1220,258 1262,234" stroke-width="11"/>
+    <path d="M1208,316 Q1184,252 1140,228" stroke-width="11"/>
+    <path d="M1208,316 Q1152,272 1112,282" stroke-width="11"/>
+    <path d="M1208,316 Q1160,306 1108,338" stroke-width="11"/>
+    <!-- mid palm, centre-left -->
+    <path d="M262,692 Q256,580 250,486" stroke-width="11"/>
+    <path d="M250,486 Q222,456 196,478" stroke-width="8"/>
+    <path d="M250,486 Q244,444 214,428" stroke-width="8"/>
+    <path d="M250,486 Q266,446 296,432" stroke-width="8"/>
+    <path d="M250,486 Q282,458 310,468" stroke-width="8"/>
+    <path d="M250,486 Q284,478 312,500" stroke-width="8"/>
+    <!-- small palm in front of the sun -->
+    <path d="M876,694 Q884,606 890,540" stroke-width="9"/>
+    <path d="M890,540 Q866,516 844,532" stroke-width="7"/>
+    <path d="M890,540 Q886,506 860,494" stroke-width="7"/>
+    <path d="M890,540 Q904,508 930,496" stroke-width="7"/>
+    <path d="M890,540 Q918,518 942,526" stroke-width="7"/>
+  </g>
+  <circle cx="60" cy="306" r="9" fill="#150826"/><circle cx="86" cy="312" r="8" fill="#150826"/>
+  <circle cx="1196" cy="326" r="9" fill="#150826"/><circle cx="1222" cy="332" r="8" fill="#150826"/>
+  <circle cx="242" cy="494" r="6" fill="#150826"/><circle cx="258" cy="498" r="5" fill="#150826"/>
+
+  <!-- ground / wet street -->
+  <rect x="0" y="680" width="1280" height="200" fill="url(#street)"/>
+  <rect x="0" y="680" width="1280" height="26" fill="#43235f"/>
+  <rect x="0" y="706" width="1280" height="5" fill="#12081f"/>
+  <!-- neon reflections on the wet street -->
+  <g filter="url(#soft)" opacity="0.5">
+    <rect x="120" y="716" width="16" height="130" fill="#ff2e88"/>
+    <rect x="180" y="716" width="12" height="96" fill="#37e0d8"/>
+    <rect x="250" y="716" width="18" height="150" fill="#ffd23f"/>
+    <rect x="330" y="716" width="12" height="110" fill="#ff2e88"/>
+    <rect x="430" y="716" width="14" height="88" fill="#37e0d8"/>
+    <rect x="520" y="716" width="12" height="120" fill="#e0218a"/>
+    <rect x="700" y="716" width="12" height="90" fill="#ff2e88"/>
+    <rect x="960" y="714" width="20" height="150" fill="#ff7b39"/>
+    <rect x="1030" y="714" width="14" height="110" fill="#ffb347"/>
+    <rect x="1100" y="714" width="18" height="135" fill="#ff7b39"/>
+  </g>
+  <g opacity="0.13" fill="#ffffff">
+    <ellipse cx="300" cy="838" rx="120" ry="10"/>
+    <ellipse cx="760" cy="820" rx="90" ry="8"/>
+    <ellipse cx="1080" cy="852" rx="130" ry="10"/>
+  </g>
+
+  <!-- game store -->
+  <g>
+    <rect x="95" y="415" width="510" height="285" fill="#2a1650" stroke="#0d0518" stroke-width="4"/>
+    <rect x="80" y="400" width="540" height="130" rx="14" fill="#12081f" stroke="#ff2e88" stroke-width="5" filter="url(#neon)"/>
+    <text class="cap" x="350" y="502" text-anchor="middle" font-size="104" letter-spacing="4" fill="#ffd23f">GTA 6</text>
+    <!-- awning, alternating stripes with a scalloped edge -->
+    <g stroke="#0d0518" stroke-width="2">
+      <polygon points="110,548 155,548 165.7,598 126,598" fill="#e0218a"/>
+      <polygon points="155,548 200,548 205.3,598 165.7,598" fill="#fdf6ec"/>
+      <polygon points="200,548 245,548 245,598 205.3,598" fill="#e0218a"/>
+      <polygon points="245,548 290,548 284.7,598 245,598" fill="#fdf6ec"/>
+      <polygon points="290,548 335,548 324.3,598 284.7,598" fill="#e0218a"/>
+      <polygon points="335,548 380,548 364,598 324.3,598" fill="#fdf6ec"/>
+    </g>
+    <g fill="#e0218a">
+      <circle cx="138" cy="600" r="9"/><circle cx="183" cy="600" r="9"/><circle cx="225" cy="600" r="9"/>
+      <circle cx="265" cy="600" r="9"/><circle cx="305" cy="600" r="9"/><circle cx="345" cy="600" r="9"/>
+    </g>
+    <!-- string lights along the awning front -->
+    <path d="M112,552 Q240,584 368,552" stroke="#0d0518" stroke-width="3" fill="none"/>
+    <g>
+      <circle cx="140" cy="562" r="9" fill="#ffd23f" opacity="0.3"/><circle cx="140" cy="562" r="4.5" fill="#ffd23f"/>
+      <circle cx="180" cy="570" r="9" fill="#ff2e88" opacity="0.3"/><circle cx="180" cy="570" r="4.5" fill="#ff2e88"/>
+      <circle cx="220" cy="575" r="9" fill="#37e0d8" opacity="0.3"/><circle cx="220" cy="575" r="4.5" fill="#37e0d8"/>
+      <circle cx="260" cy="577" r="9" fill="#ffd23f" opacity="0.3"/><circle cx="260" cy="577" r="4.5" fill="#ffd23f"/>
+      <circle cx="300" cy="575" r="9" fill="#ff2e88" opacity="0.3"/><circle cx="300" cy="575" r="4.5" fill="#ff2e88"/>
+      <circle cx="340" cy="568" r="9" fill="#37e0d8" opacity="0.3"/><circle cx="340" cy="568" r="4.5" fill="#37e0d8"/>
+    </g>
+    <!-- OUT NOW pill -->
+    <rect x="384" y="548" width="212" height="56" rx="28" fill="#e0218a" stroke="#0d0518" stroke-width="3"/>
+    <text class="cap" x="490" y="589" text-anchor="middle" font-size="38" letter-spacing="2" fill="#ffffff">OUT NOW</text>
+    <!-- windows with posters inside -->
+    <rect x="125" y="618" width="110" height="82" fill="#9fd8e8" opacity="0.85" stroke="#0d0518" stroke-width="4"/>
+    <rect x="255" y="618" width="110" height="82" fill="#9fd8e8" opacity="0.85" stroke="#0d0518" stroke-width="4"/>
+    <rect x="125" y="618" width="110" height="82" fill="none" stroke="#37e0d8" stroke-width="2" opacity="0.55"/>
+    <rect x="255" y="618" width="110" height="82" fill="none" stroke="#37e0d8" stroke-width="2" opacity="0.55"/>
+    <!-- poster 1: starburst -->
+    <polygon points="180,632 186,646 200,642 192,654 204,660 190,664 192,678 180,668 168,678 170,664 156,660 168,654 160,642 174,646" fill="#e0218a"/>
+    <!-- poster 2: game controller silhouette -->
+    <rect x="278" y="640" width="64" height="38" rx="17" fill="#2a1650"/>
+    <rect x="292" y="652" width="14" height="6" fill="#fdf6ec"/><rect x="296" y="648" width="6" height="14" fill="#fdf6ec"/>
+    <circle cx="326" cy="652" r="3.4" fill="#ffd23f"/><circle cx="334" cy="660" r="3.4" fill="#ff2e88"/>
+    <polygon points="140,700 195,618 225,618 170,700" fill="#ffffff" opacity="0.25"/>
+    <!-- door with warm glow spilling onto the street -->
+    <rect x="444" y="610" width="112" height="90" fill="#ffdf9e" opacity="0.5"/>
+    <rect x="452" y="618" width="96" height="82" fill="#ffca7a" stroke="#0d0518" stroke-width="4"/>
+    <circle cx="536" cy="662" r="5" fill="#0d0518"/>
+    <polygon points="452,700 548,700 580,760 420,760" fill="#ffca7a" opacity="0.16"/>
+  </g>
+
+  <!-- launch-night confetti in the air -->
+  <g opacity="0.85">
+    <rect x="140" y="330" width="10" height="5" fill="#ffd23f" transform="rotate(24 145 332)"/>
+    <rect x="220" y="290" width="10" height="5" fill="#ff2e88" transform="rotate(-18 225 292)"/>
+    <rect x="420" y="316" width="10" height="5" fill="#37e0d8" transform="rotate(40 425 318)"/>
+    <rect x="520" y="286" width="10" height="5" fill="#ffd23f" transform="rotate(-30 525 288)"/>
+    <rect x="640" y="330" width="10" height="5" fill="#ff2e88" transform="rotate(15 645 332)"/>
+    <rect x="60" y="420" width="10" height="5" fill="#37e0d8" transform="rotate(-24 65 422)"/>
+    <rect x="470" y="380" width="10" height="5" fill="#ff2e88" transform="rotate(28 475 382)"/>
+    <rect x="330" y="360" width="10" height="5" fill="#ffd23f" transform="rotate(-12 335 362)"/>
+  </g>
+
+  <!-- lowrider in the foreground, neon underglow -->
+  <g>
+    <ellipse cx="188" cy="862" rx="168" ry="11" fill="#ff2e88" opacity="0.45" filter="url(#soft)"/>
+    <path d="M40,838 L48,808 Q52,796 72,794 L106,792 Q122,772 152,770 L238,770 Q264,772 280,792 L314,796 Q332,799 334,813 L334,838 Q334,849 323,849 L294,849 A36,36 0 0 0 222,849 L150,849 A36,36 0 0 0 78,849 L51,849 Q40,849 40,838 Z"
+          fill="#0d5c55" stroke="#08131a" stroke-width="3"/>
+    <path d="M118,790 Q132,776 154,774 L234,774 Q252,776 264,790 L250,790 Q240,784 226,784 L156,784 Q138,784 130,790 Z" fill="#9fd8e8" opacity="0.85"/>
+    <rect x="42" y="820" width="290" height="5" fill="#e8e8e8" opacity="0.5"/>
+    <circle cx="114" cy="849" r="31" fill="#0b0b10" stroke="#e8e8e8" stroke-width="6"/>
+    <circle cx="114" cy="849" r="11" fill="#c9c9c9"/>
+    <circle cx="258" cy="849" r="31" fill="#0b0b10" stroke="#e8e8e8" stroke-width="6"/>
+    <circle cx="258" cy="849" r="11" fill="#c9c9c9"/>
+    <circle cx="328" cy="820" r="5.5" fill="#ffd23f"/>
+    <circle cx="47" cy="820" r="4.5" fill="#ff4040"/>
+  </g>
+
+  <!-- speech bubble (tail points down to the ghost) -->
+  <path d="M613,268 H1107 A28,28 0 0 1 1135,296 V440 A28,28 0 0 1 1107,468 H795 L740,560 L692,468 H613 A28,28 0 0 1 585,440 V296 A28,28 0 0 1 613,268 Z"
+        fill="#ffffff" stroke="#0d0d12" stroke-width="7" stroke-linejoin="round"/>
+  <text class="bold" x="860" y="330" text-anchor="middle" font-size="50" fill="#14101f">I spent the wait</text>
+  <text class="bold" x="860" y="385" text-anchor="middle" font-size="50" fill="#14101f">winning bounties</text>
+  <text class="bold" x="860" y="440" text-anchor="middle" font-size="50" fill="#14101f">on <tspan fill="#d6006d">make.fun</tspan></text>
+
+  <!-- queue shadow -->
+  <ellipse cx="930" cy="852" rx="350" ry="13" fill="#000000" opacity="0.35"/>
+
+  <!-- stanchions with a sagging rope behind the queue -->
+  <g stroke="#0d0518" stroke-width="3">
+    <rect x="946" y="726" width="7" height="76" fill="#3a2a5e"/>
+    <circle cx="949.5" cy="722" r="7" fill="#ffd23f" stroke="none"/>
+    <rect x="1150" y="730" width="7" height="72" fill="#3a2a5e"/>
+    <circle cx="1153.5" cy="726" r="7" fill="#ffd23f" stroke="none"/>
+    <path d="M953,738 Q1053,772 1150,742" stroke="#e0218a" stroke-width="5" fill="none"/>
+  </g>
+
+  <!-- a fan further back in the queue, beanie and shopping bag (partly behind the ghost) -->
+  <g>
+    <rect x="934" y="756" width="20" height="44" fill="#170c2e"/>
+    <rect x="972" y="756" width="20" height="44" fill="#170c2e"/>
+    <rect x="926" y="640" width="74" height="128" rx="26" fill="#170c2e"/>
+    <circle cx="963" cy="606" r="32" fill="#170c2e"/>
+    <path d="M931,600 A32,32 0 0 1 995,600 L995,592 L931,592 Z" fill="#37e0d8"/>
+    <rect x="902" y="700" width="24" height="34" rx="3" fill="#ffd23f"/>
+    <path d="M906,700 A8,8 0 0 1 922,700" stroke="#ffd23f" stroke-width="3.5" fill="none"/>
+  </g>
+
+  <!-- gamers waiting in line (silhouettes, seen from behind) -->
+  <g>
+    <!-- gamer 1, magenta cap -->
+    <rect x="968" y="790" width="26" height="58" fill="#1d1136"/>
+    <rect x="1010" y="790" width="26" height="58" fill="#1d1136"/>
+    <rect x="958" y="636" width="88" height="168" rx="30" fill="#1d1136"/>
+    <circle cx="1002" cy="596" r="38" fill="#1d1136"/>
+    <path d="M964,592 A38,38 0 0 1 1040,592 Z" fill="#e0218a"/>
+    <rect x="1036" y="586" width="34" height="11" rx="5" fill="#e0218a"/>
+    <!-- gamer 2, backpack, checking a glowing phone -->
+    <rect x="1086" y="792" width="24" height="56" fill="#150b2a"/>
+    <rect x="1130" y="792" width="24" height="56" fill="#150b2a"/>
+    <rect x="1078" y="650" width="84" height="160" rx="34" fill="#150b2a"/>
+    <rect x="1150" y="668" width="30" height="96" rx="12" fill="#2c1a52"/>
+    <circle cx="1120" cy="612" r="36" fill="#150b2a"/>
+    <circle cx="1066" cy="706" r="13" fill="#cfefff" opacity="0.25"/>
+    <rect x="1059" y="694" width="13" height="22" rx="2.5" fill="#cfefff"/>
+    <!-- gamer 3, headphones, holding a game case -->
+    <rect x="1188" y="794" width="22" height="54" fill="#241243"/>
+    <rect x="1228" y="794" width="22" height="54" fill="#241243"/>
+    <rect x="1180" y="662" width="80" height="150" rx="28" fill="#241243"/>
+    <circle cx="1220" cy="626" r="34" fill="#241243"/>
+    <path d="M1188,620 A34,34 0 0 1 1252,620" stroke="#37e0d8" stroke-width="7" fill="none"/>
+    <rect x="1182" y="618" width="11" height="22" rx="5" fill="#37e0d8"/>
+    <rect x="1247" y="618" width="11" height="22" rx="5" fill="#37e0d8"/>
+    <rect x="1160" y="700" width="17" height="24" rx="2" fill="#f5f0e6"/>
+    <!-- gamer 4, cropped at the right edge -->
+    <rect x="1262" y="668" width="70" height="146" rx="26" fill="#1a0d33"/>
+    <circle cx="1290" cy="632" r="32" fill="#1a0d33"/>
+    <path d="M1262,628 A32,32 0 0 1 1318,624 L1318,616 L1262,616 Z" fill="#ffd23f"/>
+  </g>
+
+  <!-- the make.fun ghost, front of the queue, holding its magenta coin -->
+  <g transform="translate(620,520)">
+    <path d="M18,306 L18,120 A117,117 0 0 1 252,120 L252,306 A29.25,17 0 0 1 193.5,306 A29.25,17 0 0 1 135,306 A29.25,17 0 0 1 76.5,306 A29.25,17 0 0 1 18,306 Z"
+          fill="#ffffff" stroke="#0d0d12" stroke-width="11" stroke-linejoin="round"/>
+    <path d="M95,113 L100.9,134.1 L122,140 L100.9,145.9 L95,167 L89.1,145.9 L68,140 L89.1,134.1 Z" fill="#0d0d12"/>
+    <path d="M175,113 L180.9,134.1 L202,140 L180.9,145.9 L175,167 L169.1,145.9 L148,140 L169.1,134.1 Z" fill="#0d0d12"/>
+    <circle cx="250" cy="228" r="24" fill="#ffffff" stroke="#0d0d12" stroke-width="9"/>
+    <circle cx="276" cy="252" r="46" fill="#e0218a" stroke="#0d0d12" stroke-width="8"/>
+    <polygon points="272,224 277.6,240.2 294.8,240.6 281.1,251 286.1,267.4 272,257.6 257.9,267.4 262.9,251 249.2,240.6 266.4,240.2"
+             fill="#ffffff" transform="translate(4,4)"/>
+  </g>
+
+  <!-- top caption -->
+  <text class="cap" x="640" y="118" text-anchor="middle" font-size="100" letter-spacing="2"
+        fill="#ffffff" stroke="#0d0518" stroke-width="10" paint-order="stroke">WAITED 13 YEARS</text>
+  <text class="cap" x="640" y="232" text-anchor="middle" font-size="100" letter-spacing="2"
+        fill="#ffffff" stroke="#0d0518" stroke-width="10" paint-order="stroke">FOR <tspan fill="#ffd23f">GTA 6</tspan></text>
+
+  <!-- bottom bar -->
+  <rect x="0" y="880" width="1280" height="144" fill="#0a0a10"/>
+  <rect x="0" y="880" width="1280" height="5" fill="#e0218a"/>
+  <text class="cap" x="640" y="982" text-anchor="middle" font-size="84" letter-spacing="2" fill="#ffffff">LAUNCH DAY. <tspan fill="#ffd23f">FINALLY.</tspan></text>
+</svg>
+</body>
+</html>
